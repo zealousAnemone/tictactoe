@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="tictactoe.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="tictactoe.css">
+	<title>Tic Tac Toe</title>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>Tic-Tac-Toe</h1>
+    <h3>FreeCodeCamp</h3>
+    <main>
+      <table>
+        <tr>
+          <td id="tl" value='tl'></td>
+          <td id="tm" value='tm' class="v-middle"></td>
+          <td id="tr"></td>
+        </tr>
+        <tr>
+          <td id="ml" value='ml' class="h-middle"></td>
+          <td id="mm" value='mm' class="h-middle v-middle"></td>
+          <td id="mr" value='mr' class="h-middle"></td>
+        </tr>
+        <tr>
+          <td id="bl" value='bl'></td>
+          <td id="bm" value='bm' class="v-middle"></td>
+          <td id="br" value='br'></td>
+        </tr>
+      </table>
+      <button id="reset" class="btn btn-default">Reset</button>
+    </main>
+    <footer>
+      <p>created and coded by <a href="https://codepen.io/veewren">V.Wren</p>
+    </footer>
+<div class="modal fade bs-example-modal-sm" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" id="XO">
+  <div class="modal-dialog modal-sm" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Welcome, Human</h4>
+      </div>
+      <div class="modal-body">
+        <p>Choose X or O</p>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id='x'>X</button>
+        <button type="button" class="btn btn-default" data-dismiss="modal" id='o'>O</button>
+      </div>
+      
+    </div>
+  </div>
+</div> 
+    
+<div class="modal fade" id="playerOneWin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+      <div class="modal-body">
+        <h3> Player One Wins!</h3>
+        <button type="button" class="btn btn-default play-again" data-dismiss="modal" class='play-again'>Play Again</button>
+        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">I'm Done</button>
+      </div>
+    </div>
+  </div>
+</div> 
+    
+<div class="modal fade" id="playerTwoWin">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+      <div class="modal-body">
+        <h3> Player Two Wins!</h3>
+        <button type="button" class="btn play-again btn-default" data-dismiss="modal">Play Again</button>
+        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">I'm Done</button>
+      </div>
+    </div>
+  </div>
+</div> 
+
+<div class="modal fade" id="draw">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content"> 
+      <div class="modal-body">
+        <h3>It's a Draw!</h3>
+        <button type="button" class="btn btn-default play-again" data-dismiss="modal">Play Again</button>
+        <button type="button" class="btn btn-default dismiss" data-dismiss="modal">I'm Done</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>

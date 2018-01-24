@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine');
+
+.container {
+  background: #0E0B16;
+  color: #E7DFDD;
+  padding: 2rem 2rem 3rem 2rem;
+  
+  text-align: center;
+  border-radius: 0px 0px 20px 20px;
+  
+}
+footer {
+  margin: 5rem auto 0rem auto;
+}
+table {
+  margin: 4rem auto;
+  border-spacing: 0px;
+}
+
+td {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  
+}
+
+td h1 {
+  margin: 0px;
+  font-size: 4em;
+  font-family: 'Cousine', monospace;
+}
+.h-middle {
+  border-top: 3px solid #E7DFDD;
+  border-bottom: 3px solid #E7DFDD;
+}
+.v-middle {
+  border-left: 3px solid #E7DFDD;
+  border-right: 3px solid #E7DFDD;
+}
+
+.modal-content {
+  color: #0E0B16 !important;
+}
